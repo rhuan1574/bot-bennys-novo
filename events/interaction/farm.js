@@ -18,5 +18,5 @@ module.exports = async function handleButtonFarm(interaction) {
 
   const row = new ActionRowBuilder().addComponents(button, button2);
 
-  await interaction.reply({ embeds: [embed], components: [row] });
+  await interaction.reply({ embeds: [embed], components: [row], flags: 64});
 }

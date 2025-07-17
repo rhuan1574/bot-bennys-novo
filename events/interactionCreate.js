@@ -584,7 +584,7 @@ module.exports = {
                       },
                       {
                         name: "⏰ Data/Hora",
-                        value: new Date().toLocaleString("pt-BR"),
+                        value: new Date().toLocaleString("pt-BR"), 
                         inline: false,
                       }
                     )
@@ -686,6 +686,9 @@ module.exports = {
             });
 
             break;
+            case 'farm':
+
+             break; 
           default:
             await interaction.reply({
               content: "Modal não reconhecido.",
